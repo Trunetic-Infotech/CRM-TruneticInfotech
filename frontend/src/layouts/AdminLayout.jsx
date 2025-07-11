@@ -7,12 +7,12 @@ const AdminLayout = ({ children }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   return (
-    <div className="flex h-screen bg-gray-100 relative">
+    <div className="flex h-screen bg-gray-100 relative ">
       {/* Hamburger Icon (Mobile only when sidebar is closed) */}
       {!isSidebarOpen && (
         <FiMenu
           size={28}
-          className=" md:hidden absolute top-2 left-2"
+          className=" md:hidden absolute top-6 left-1"
           onClick={() => setIsSidebarOpen(true)}
         />
       )}

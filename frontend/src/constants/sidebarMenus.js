@@ -1,16 +1,86 @@
 export const adminMenu = [
   { label: "Dashboard", path: "/admin/dashboard", icon: "📊" },
-  { label: "Projects", path: "/admin/projects", icon: "🧩" },
+
   {
-    label: "HR Management",
-    icon: "🧑‍💼",
+    label: "Company",
+    icon: "🏢",
     submenu: [
-      { label: "Employees", path: "/admin/employees" },
-      { label: "Attendance", path: "/admin/attendance" },
+      { label: "Departments", path: "/admin/company/departments" },
+      { label: "Designations", path: "/admin/company/designations" },
     ],
   },
-  { label: "Clients", path: "/admin/clients", icon: "🏢" },
+
+  {
+    label: "Employees",
+    icon: "👥",
+    submenu: [
+      { label: "All Employees", path: "/admin/employees" },
+      { label: "Add Employee", path: "/admin/employees/add" },
+      { label: "Employee Types", path: "/admin/employees/types" },
+      { label: "Attendance", path: "/admin/employees/attendance" },
+    ],
+  },
+
+  {
+    label: "Projects",
+    icon: "🧩",
+    submenu: [
+      { label: "All Projects", path: "/admin/projects" },
+      { label: "Create Project", path: "/admin/projects/create" },
+      { label: "Project Categories", path: "/admin/projects/categories" },
+    ],
+  },
+
+  {
+    label: "Clients",
+    icon: "🤝",
+    submenu: [
+      { label: "All Clients", path: "/admin/clients" },
+      { label: "Add Client", path: "/admin/clients/add" },
+    ],
+  },
+
+  {
+    label: "HR & Payroll",
+    icon: "📄",
+    submenu: [
+      { label: "Leave Requests", path: "/admin/hr/leaves" },
+      { label: "Salaries", path: "/admin/hr/salaries" },
+      { label: "Payslips", path: "/admin/hr/payslips" },
+    ],
+  },
+
+  {
+    label: "Finance",
+    icon: "💰",
+    submenu: [
+      { label: "Invoices", path: "/admin/finance/invoices" },
+      { label: "Expenses", path: "/admin/finance/expenses" },
+    ],
+  },
+
+  {
+    label: "Reports",
+    icon: "📈",
+    submenu: [
+      { label: "Project Reports", path: "/admin/reports/projects" },
+      { label: "Employee Reports", path: "/admin/reports/employees" },
+    ],
+  },
+
+  {
+    label: "System",
+    icon: "⚙️",
+    submenu: [
+      { label: "Settings", path: "/admin/settings" },
+      { label: "Notifications", path: "/admin/notifications" },
+      { label: "Roles & Permissions", path: "/admin/roles" },
+    ],
+  },
+
+  { label: "Logout", path: "/logout", icon: "🚪" },
 ];
+
 
 export const hrMenu = [
     {label: "Dashboard", path: "/hr/dashboard", icon: "📊"},
