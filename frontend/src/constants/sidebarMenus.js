@@ -14,8 +14,41 @@ export const adminMenu = [
 
 export const hrMenu = [
     {label: "Dashboard", path: "/hr/dashboard", icon: "📊"},
-    {label: "Employees", path: "/hr/employees", icon: "📊"},
-    {label: "Attendance", path: "/hr/attendance", icon: "📊"},
+    {label: "Recruitment", path: "/hr/recruitment", icon: "📝",
+      submenu: [
+        { label: "We are Requirements", path: "/hr/recruitment/job-openings" },
+        { label: "Applications", path: "/hr/recruitment/applications" },
+        { label: "Interview Schedule", path: "/hr/recruitment/interviews" },
+      ]
+
+    },
+    {label: "Employees", path: "/hr/employees", icon: "📊",
+      submenu: [
+      { label: "Employee Onboarding", path: "/hr/onboarding" },
+      { label: "Employees List", path: "/hr/employee/details" },
+      { label: "Employee Performance", path: "/hr/performance" },
+      { label: "Employee Training", path: "/hr/training" }
+    ]},
+    {label: "Attendance", path: "/hr/attendance", icon: "📊",
+      submenu: [
+        { label: "Mark Attendance", path: "/hr/attendance/mark" },
+        { label: "Attendance Records", path: "/hr/attendance/records" },
+ 
+      ]},
+    {label: "Leave Management", path: "/hr/leave", icon: "📊",
+      submenu: [
+        { label: "Apply for Leave", path: "/hr/leave/apply" },
+        { label: "Leave Status", path: "/hr/leave/status" },
+        // { label: "Leave Policies", path: "/hr/leave/policies" }
+      ]
+    },
+    {label: "Payroll", path: "/hr/payroll", icon: "💰",
+      submenu: [
+        { label: "Salary Structure", path: "/hr/payroll/salary-structure" },
+        { label: "Payslips", path: "/hr/payroll/payslips" },
+        // { label: "Tax Management", path: "/hr/payroll/tax-management" }
+      ]
+    },
 ]
 
 export const projectManagerMenu = [
