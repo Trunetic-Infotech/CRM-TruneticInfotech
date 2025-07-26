@@ -87,8 +87,8 @@ export const hrMenu = [
     {label: "Recruitment", path: "/hr/recruitment", icon: "📝",
       submenu: [
         { label: "We are Requirements", path: "/hr/recruitment/job-openings" },
-        { label: "Applications", path: "/hr/recruitment/applications" },
-        { label: "Interview Schedule", path: "/hr/recruitment/interviews" },
+        // { label: "Applications", path: "/hr/recruitment/applications" },
+        // { label: "Interview Schedule", path: "/hr/recruitment/interviews" },
       ]
 
     },
@@ -119,24 +119,35 @@ export const hrMenu = [
         // { label: "Tax Management", path: "/hr/payroll/tax-management" }
       ]
     },
+     { label: "Logout", path: "/", icon: "🚪" },
 ]
 
 export const projectManagerMenu = [
-    {label: "Dashboard",  path: "/project-manager/dashboard"},
-    {label: "Projects", submenu: [
-        {label: "My Projects", path: "/project-manager/projects/my-projects"},
-        {label: "Create Project", path: "/project-manager/projects/create-project"},
-        {label: "Team Assignments", path: "/project-manager/projects/team"},
-        {label: "Tasks", path: "/project-manager/projects/tasks"},
-    ]}
+    {label: "Dashboard",  path: "/project-manager/dashboard" , icon: "📊"},
+    {label: "Projects", path: "/project-manager/projects", icon: "📁"},
+    {label: "Tasks", path: "/project-manager/tasks", icon: "🗂️"},
+    {label: "Team", path: "/project-manager/team", icon: "👥"},
+      {label: "Clients", path: "/project-manager/clients", icon: "👥"},
+        {label: "Attendance", path: "/project-manager/attendance", icon: "📊",
+      submenu: [
+        { label: "Mark Attendance", path: "/project-manager/attendance/mark" },
+        { label: "Attendance Records", path: "/project-manager/attendance/records" },
+ 
+      ]},
+              {label: "Leave", path: "/project-manager/Leave", icon: "📊",
+      submenu: [
+        { label: "Apply Leave", path: "/project-manager/Leave/mark" },
+        { label: "status Leave", path: "/project-manager/Leave/records" },
+ 
+      ]},
+    {label: "Logout", path: "/", icon: "🚪"},
 ]
 
 export const employeeMenu = [
   { label: "Dashboard", path: "/employee/dashboard", icon: "📊" },
 
   {
-    label: "My Work",
-    icon: "🗂️",
+    label: "My Work",icon: "🗂️",
     submenu: [
       { label: "Assigned Tasks", path: "/employee/tasks" },
       { label: "Submit Work", path: "/employee/submit" },
@@ -179,6 +190,7 @@ export const employeeMenu = [
       { label: "Meeting Schedule", path: "/employee/meetings" },
     ],
   },
+   {label: "Logout", path: "/", icon: "🚪"},
 ];
 
 

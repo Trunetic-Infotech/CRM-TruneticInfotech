@@ -43,8 +43,8 @@ const HRRoutes = ()=> {
                 <Route path="payroll/payslips" element={<Payslips />} />
                 <Route path="attendance/mark"  element={<AttendanceMark />} />
                 <Route path="attendance/records"  element={<AttendanceRecords />} />
-                <Route path="recruitment/applications" element={<Application />} />
-                <Route path="recruitment/interviews" element={<Interviews />} />
+                {/* <Route path="recruitment/applications" element={<Application />} />
+                <Route path="recruitment/interviews" element={<Interviews />} /> */}
             </Routes>
         </HRLayout>
     )

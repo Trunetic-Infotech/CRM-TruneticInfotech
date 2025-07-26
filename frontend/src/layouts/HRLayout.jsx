@@ -1,17 +1,33 @@
 import { useNavigate } from "react-router-dom";
 import Sidebar from "../components/Sidebar";
 import { hrMenu } from "../constants/sidebarMenus";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { FiMenu } from "react-icons/fi";
 
 const HRLayout = ({children}) => {
-    // const navigate = useNavigate();
 
-    // useEffect(()=>{
-    //     navigate('/hr/employees')
-    // },[])
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
     return (
         <div className="flex h-screen bg-gray-100">
-            <Sidebar menuItems={hrMenu} title="Human Resource Panel"/>
+
+  {/* Hamburger Icon (Mobile only when sidebar is closed) */}
+      {!isSidebarOpen && (
+        <FiMenu
+          size={28}
+          className=" md:hidden absolute top-6 left-1"
+          onClick={() => setIsSidebarOpen(true)}
+        />
+      )}
+
+              <div className={`${isSidebarOpen ? "block" : "hidden"} md:block`}>
+        <Sidebar
+          menuItems={hrMenu}
+          title="Human Resource Panel"
+          onClose={() => setIsSidebarOpen(false)}
+          setIsSidebarOpen={setIsSidebarOpen}
+        />
+      </div>
+            {/* <Sidebar menuItems={hrMenu} title="Human Resource Panel"/> */}
             <main className="flex-1 overflow-y-auto p-4">{children}</main>
         </div>
     )
