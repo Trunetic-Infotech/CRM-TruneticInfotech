@@ -14,7 +14,7 @@ export const adminMenu = [
     label: "Employees",
     icon: "👥",
     submenu: [
-      { label: "All Employees", path: "/admin/employees" },
+      { label: "All Employees", path: "/admin/employees/all-emplyees" },
       { label: "Add Employee", path: "/admin/employees/add" },
       { label: "Employee Types", path: "/admin/employees/types" },
       { label: "Attendance", path: "/admin/employees/attendance" },
@@ -25,7 +25,7 @@ export const adminMenu = [
     label: "Projects",
     icon: "🧩",
     submenu: [
-      { label: "All Projects", path: "/admin/projects" },
+      { label: "All Projects", path: "/admin/projects/all-projects" },
       { label: "Create Project", path: "/admin/projects/create" },
       { label: "Project Categories", path: "/admin/projects/categories" },
     ],
@@ -35,8 +35,8 @@ export const adminMenu = [
     label: "Clients",
     icon: "🤝",
     submenu: [
-      { label: "All Clients", path: "/admin/clients" },
-      { label: "Add Client", path: "/admin/clients/add" },
+      { label: "All Clients", path: "/admin/clients/all-clients" },
+      { label: "Add Client", path: "/admin/clients/add-clients" },
     ],
   },
 
@@ -44,7 +44,7 @@ export const adminMenu = [
     label: "HR & Payroll",
     icon: "📄",
     submenu: [
-      { label: "Leave Requests", path: "/admin/hr/leaves" },
+      { label: "Leave Requests", path: "/admin/hr/leave-requests" },
       { label: "Salaries", path: "/admin/hr/salaries" },
       { label: "Payslips", path: "/admin/hr/payslips" },
     ],
@@ -78,7 +78,7 @@ export const adminMenu = [
     ],
   },
 
-  { label: "Logout", path: "/logout", icon: "🚪" },
+  { label: "Logout", path: "/", icon: "🚪" },
 ];
 
 

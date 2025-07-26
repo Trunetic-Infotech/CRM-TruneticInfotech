@@ -1,8 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import Sidebar from "../components/Sidebar";
-import { hrMenu } from "../constants/sidebarMenus";
-import { useEffect, useState } from "react";
-import { FiMenu } from "react-icons/fi";
+import { useEffect } from "react";
+import { adminMenu, employeeMenu, hrMenu, projectManagerMenu } from "../constants/sidebarMenus";
 
 const HRLayout = ({children}) => {
 

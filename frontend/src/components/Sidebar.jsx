@@ -35,7 +35,7 @@ const Sidebar = ({ menuItems, title = "Dashboard", setIsSidebarOpen }) => {
       : "flex items-center gap-3 px-4 py-2 rounded-lg text-gray-700 hover:bg-blue-100 hover:text-blue-600 transition";
 
   return (
-    <aside className="w-64 h-screen bg-white shadow-md border-r border-gray-200 p-4 overflow-y-auto   absolute md:relative ">
+    <aside className="w-64 h-screen bg-white shadow-md border-r border-gray-200 p-4 overflow-y-auto   absolute md:relative  z-10">
       {setIsSidebarOpen && (
    <FiX
     size={26}
