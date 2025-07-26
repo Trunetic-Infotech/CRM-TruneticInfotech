@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import Logo from '../assets/logo.png'; // Optional logo
 
-const Login = () => {
+const   Login = () => {
   const { role } = useParams();
 
   const displayRole = role.replace('-', ' '); // e.g., "project-manager" → "project manager"
